@@ -131,7 +131,7 @@ def _shuffle_within_language(labels, rng):
 
 
 def disagreement_method(seed: int = 3):
-    """Part 1: within vs across comparisons, and the two shuffles."""
+    """Section 2: within vs across comparisons, and the two shuffles."""
     rng = np.random.default_rng(seed)
     fig, axes = plt.subplots(1, 3, figsize=(12.5, 3.9))
     boxes = [(2, 0, 0, 1, "-", "within"), (2, 0, 2, 3, "-", ""), (2, 2, 0, 1, "--", "across")]
@@ -181,7 +181,7 @@ def disagreement_method(seed: int = 3):
 
 
 def something_else_method(seed: int = 5):
-    """Part 5: the share of 'something else' per language, before and after shuffling."""
+    """Section 3: the share of 'something else' per language, before and after shuffling."""
     rng = np.random.default_rng(seed)
     shuffled = _shuffle_within_painting(TOY_LABELS, rng)
     fig, axes = plt.subplots(1, 2, figsize=(9.5, 3.8))
@@ -250,7 +250,7 @@ def _bars(ax, x, y, values, w=0.16, h=0.55, color=BAR):
 
 
 def inverted_cbm_method():
-    """Part 2: what the language classifier sees, and why concepts alone cannot work."""
+    """Section 4: what the language classifier sees, and why concepts alone cannot work."""
     fig, (ax1, ax2) = plt.subplots(
         1, 2, figsize=(12.5, 3.6), gridspec_kw={"width_ratios": [1.3, 1]}
     )
@@ -307,7 +307,7 @@ def inverted_cbm_method():
 
 
 def variance_method():
-    """Part 3: the split of one emotion choice (sadness yes/no) into five parts."""
+    """Section 6: the split of one emotion choice (sadness yes/no) into five parts."""
     y = (TOY_LABELS == "S").astype(float)  # paintings x languages x annotators
     grand = y.mean()
     cell = y.mean(axis=2)
@@ -382,7 +382,7 @@ def variance_method():
 
 
 def swap_method(seed: int = 1):
-    """Part 4: concept profiles move between paintings; languages and emotions stay."""
+    """Section 5: concept profiles move between paintings; languages and emotions stay."""
     rows = [
         ("english", "sadness", "A"),
         ("chinese", "contentment", "B"),
@@ -443,4 +443,229 @@ def swap_method(seed: int = 1):
         color=INK_2,
     )
     fig.tight_layout()
+    return fig
+
+
+EMOTION_LETTERS = ["Am", "Aw", "Co", "Ex", "An", "Di", "Fe", "Sa", "SE"]
+HIGHLIGHT = "#6250d6"  # the bottleneck / an edit
+
+
+def _prob_bars(ax, x, y, probs, chosen=None, w=0.17, h=1.0, labels=True):
+    """Nine small bars for an emotion distribution; the chosen emotion outlined."""
+    for i, p in enumerate(probs):
+        ax.add_patch(Rectangle((x + i * (w + 0.04), y), w, h * p, color=BAR, lw=0))
+        if chosen == i:
+            ax.add_patch(
+                Rectangle(
+                    (x + i * (w + 0.04) - 0.03, y - 0.03),
+                    w + 0.06,
+                    h + 0.06,
+                    fill=False,
+                    ec=HIGHLIGHT,
+                    lw=1.6,
+                )
+            )
+        if not labels:
+            continue
+        ax.text(
+            x + i * (w + 0.04) + w / 2,
+            y - 0.18,
+            EMOTION_LETTERS[i][:2],
+            ha="center",
+            va="top",
+            fontsize=6.5,
+            color=INK_2,
+        )
+
+
+def forward_cbm_method():
+    """Section 1: concept scores -> one emotion head per language, and how it is scored."""
+    fig, (ax1, ax2) = plt.subplots(
+        1, 2, figsize=(12.5, 3.8), gridspec_kw={"width_ratios": [1.25, 1]}
+    )
+    for ax in (ax1, ax2):
+        ax.set_xlim(0, 10)
+        ax.set_ylim(0, 5)
+        ax.axis("off")
+    _box(ax1, 0.1, 2.0, 1.6, 1.2, "painting")
+    _arrow(ax1, 1.8, 2.6, 2.4, 2.6)
+    _box(ax1, 2.5, 1.7, 2.0, 1.8, "")
+    _bars(ax1, 2.75, 2.0, [0.9, 0.3, 0.7, 0.2, 0.5, 0.8])
+    ax1.text(3.5, 3.15, "concept scores", ha="center", fontsize=10, color=INK)
+    probs = {
+        "english": [0.1, 0.15, 0.3, 0.07, 0.02, 0.04, 0.08, 0.12, 0.12],
+        "arabic": [0.17, 0.19, 0.3, 0.08, 0.01, 0.02, 0.03, 0.07, 0.13],
+        "chinese": [0.05, 0.08, 0.5, 0.04, 0.01, 0.06, 0.1, 0.14, 0.02],
+    }
+    for i, lang in enumerate(LANGS):
+        yy = 3.7 - i * 1.55
+        _arrow(ax1, 4.6, 2.6, 5.4, yy + 0.35)
+        ax1.add_patch(plt.Circle((5.65, yy + 0.35), 0.12, color=LANG_COLORS[lang]))
+        ax1.text(5.85, yy + 0.35, f"{lang} head", va="center", fontsize=10, color=INK)
+        _prob_bars(ax1, 7.6, yy, probs[lang], h=0.9, labels=False)
+    ax1.text(8.5, 4.75, "emotion mix", ha="center", fontsize=10, color=INK)
+    ax1.set_title(
+        "The bottleneck: what is in the painting → each language's emotions",
+        fontsize=12,
+        fontweight="bold",
+        color=INK,
+    )
+    # right: scoring one held-out annotation that chose sadness
+    habits = [0.1, 0.15, 0.36, 0.06, 0.01, 0.04, 0.07, 0.11, 0.1]
+    model = [0.05, 0.08, 0.2, 0.04, 0.01, 0.07, 0.17, 0.32, 0.06]
+    ax2.text(0.2, 4.55, "one unseen annotation chose sadness (Sa)", fontsize=10.5, color=INK)
+    _prob_bars(ax2, 0.1, 2.6, habits, chosen=7, w=0.36, h=1.4)
+    ax2.text(1.95, 1.95, "habits-only guess", ha="center", fontsize=10, color=INK)
+    _prob_bars(ax2, 5.4, 2.6, model, chosen=7, w=0.36, h=1.4)
+    ax2.text(7.25, 1.95, "bottleneck", ha="center", fontsize=10, color=INK)
+    ax2.text(
+        5.0,
+        0.9,
+        "score = share of the habits-only error that the bottleneck removes\n"
+        "(0 = no better than each language's overall mix, higher is better)",
+        ha="center",
+        fontsize=10,
+        color=INK_2,
+    )
+    ax2.set_title("How it is scored", fontsize=12, fontweight="bold", color=INK)
+    fig.tight_layout()
+    return fig
+
+
+def encoder_method():
+    """Section 7: the same concepts through two encoders, into the same three tests."""
+    fig, ax = plt.subplots(figsize=(12.5, 3.2))
+    ax.set_xlim(0, 12.5)
+    ax.set_ylim(0, 4)
+    ax.axis("off")
+    _box(ax, 0.1, 1.4, 2.4, 1.2, "same paintings,\nsame concept list,\nsame English prompts")
+    for i, name in enumerate(["original CLIP\n(mostly English)", "multilingual CLIP"]):
+        yy = 2.55 - i * 1.7
+        _arrow(ax, 2.6, 2.0, 3.6, yy + 0.4)
+        _box(ax, 3.7, yy, 2.4, 0.9, name, fc="#ebe9f8", ec=HIGHLIGHT)
+        _arrow(ax, 6.2, yy + 0.45, 7.0, yy + 0.45)
+        _box(ax, 7.1, yy, 2.0, 0.9, "concept scores")
+        _arrow(ax, 9.2, yy + 0.45, 9.9, 2.0)
+    _box(
+        ax,
+        10.0,
+        0.9,
+        2.4,
+        2.2,
+        "the same tests:\n\nsection 1 bottleneck\nsection 4 classifier\nsection 5 swap test",
+    )
+    ax.set_title(
+        "Swap the encoder, keep everything else", fontsize=12, fontweight="bold", color=INK
+    )
+    fig.tight_layout()
+    return fig
+
+
+def vocabulary_method():
+    """Section 8: which concept list each language's head uses, and where native words
+    come from."""
+    fig, (ax1, ax2) = plt.subplots(
+        1, 2, figsize=(12.5, 3.8), gridspec_kw={"width_ratios": [1.35, 1]}
+    )
+    ax1.set_xlim(0, 10)
+    ax1.set_ylim(0, 5)
+    ax1.axis("off")
+    rows = {
+        "generic": ["a boat · the sea · red", "a boat · the sea · red", "a boat · the sea · red"],
+        "translated": ["a boat · the sea · red", "قارب · البحر · أحمر", "小船 · 大海 · 红色"],
+        "native": ["colors · woman · dark", "رجل · لون · سماء", "感到 · 满足 · 女人"],
+    }
+    for j, lang in enumerate(LANGS):
+        x = 2.2 + j * 2.6
+        ax1.add_patch(Rectangle((x, 4.35), 2.4, 0.12, color=LANG_COLORS[lang], lw=0))
+        ax1.text(x + 1.2, 4.6, f"{lang} head", ha="center", fontsize=10, color=INK)
+    for i, (name, cells) in enumerate(rows.items()):
+        yy = 3.3 - i * 1.25
+        ax1.text(0.1, yy + 0.4, name, va="center", fontsize=10.5, color=INK, fontweight="bold")
+        for j, text in enumerate(cells):
+            _box(ax1, 2.2 + j * 2.6, yy, 2.4, 0.8, text, fontsize=9.5)
+    ax1.text(
+        5.0,
+        0.0,
+        "all three scored with the multilingual CLIP; same list length",
+        ha="center",
+        fontsize=9.5,
+        color=INK_2,
+    )
+    ax1.set_title(
+        "Which concept list each language's head uses", fontsize=12, fontweight="bold", color=INK
+    )
+    # right: where native words come from
+    ax2.set_xlim(0, 10)
+    ax2.set_ylim(0, 5)
+    ax2.axis("off")
+    _box(ax2, 0.3, 2.6, 4.2, 1.6, "479 other paintings\n(their explanations)", fc="#f3f2ee")
+    _box(ax2, 5.5, 2.6, 4.2, 1.6, "our 840 paintings\n(tested)", fc="#ebe9f8", ec=HIGHLIGHT)
+    _arrow(ax2, 2.4, 2.5, 2.4, 1.4)
+    ax2.text(
+        2.4,
+        0.9,
+        "most common words\nper language → native lists",
+        ha="center",
+        fontsize=10,
+        color=INK,
+    )
+    ax2.plot([5.0, 5.0], [0.4, 4.5], color=INK_2, lw=1.2, ls="--")
+    ax2.text(
+        7.6, 1.3, "never used for mining,\nso nothing leaks", ha="center", fontsize=10, color=INK_2
+    )
+    ax2.set_title("Where native words come from", fontsize=12, fontweight="bold", color=INK)
+    fig.tight_layout()
+    return fig
+
+
+def edit_method():
+    """Section 9: real edits raise the mentioned concepts; sham edits raise random ones."""
+    names = ["a boat", "the sea", "the sky", "a cat", "a bridge", "red"]
+    base = [0.45, 0.35, 0.6, 0.15, 0.25, 0.3]
+    high = 0.85
+    edits = {
+        "concept scores": set(),
+        "real edit": {"a boat", "the sea"},
+        "sham edit": {"a cat", "a bridge"},
+    }
+    fig, axes = plt.subplots(1, 3, figsize=(12.5, 3.8))
+    for ax, (title, raised) in zip(axes, edits.items(), strict=True):
+        for i, (name, v) in enumerate(zip(names, base, strict=True)):
+            ax.add_patch(Rectangle((i, 0), 0.7, v, color=BAR, lw=0))
+            if name in raised:
+                ax.add_patch(Rectangle((i, v), 0.7, high - v, color=HIGHLIGHT, lw=0))
+            ax.text(
+                i + 0.35, -0.05, name, ha="right", va="top", rotation=40, fontsize=9.5, color=INK
+            )
+        ax.axhline(high, color=INK_2, lw=1, ls=":")
+        ax.text(5.9, high + 0.02, "high", ha="right", va="bottom", fontsize=9, color=INK_2)
+        ax.set_xlim(-0.3, 6)
+        ax.set_ylim(-0.55, 1.15)
+        ax.axis("off")
+        ax.set_title(title, fontsize=12, fontweight="bold", color=INK)
+    axes[0].text(
+        2.85,
+        1.03,
+        "English explanation: “a lonely boat on a grey sea”",
+        ha="center",
+        fontsize=9.5,
+        color=INK_2,
+    )
+    axes[1].text(
+        2.85, 1.03, "raise what the explanation mentions", ha="center", fontsize=9.5, color=INK_2
+    )
+    axes[2].text(
+        2.85, 1.03, "raise as many random concepts", ha="center", fontsize=9.5, color=INK_2
+    )
+    fig.text(
+        0.5,
+        0.0,
+        "then compare the bottleneck's predictions for the Arabic and Chinese "
+        "annotators of the same painting",
+        ha="center",
+        fontsize=10,
+        color=INK_2,
+    )
+    fig.tight_layout(rect=(0, 0.05, 1, 1))
     return fig
