@@ -1,0 +1,23 @@
+# Personal Claude Code files (not shared with the team)
+CLAUDE.md
+CLAUDE.local.md
+.claude/
+
+# Python / uv
+.venv/
+__pycache__/
+*.py[cod]
+.ruff_cache/
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data and caches (never commit)
+data/
+
+# macOS
+.DS_Store
+
+# Secrets
+.env*

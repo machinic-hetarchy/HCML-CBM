@@ -1,0 +1,30 @@
+seed: 42
+device: auto                 # auto picks mps on Apple Silicon, else cpu
+
+data:
+  # ArtELingo-28 train CSV (no images); see notebook section 0 for where it comes from
+  annotations_csv: data/raw/artelingo28_train_final.csv
+  annotations_parquet: data/annotations.parquet
+  # images fetched from wikiart.org by painting slug (only the kept paintings)
+  images_dir: data/images
+  languages: [english, arabic, chinese]   # exact strings in the CSV (lowercase)
+  emotions: [amusement, awe, contentment, excitement, anger, disgust, fear, sadness, something else]
+  min_annotations_per_language: 5
+  max_paintings: 8000        # cap on paintings kept; 843 pass the filter, so no-op for now
+
+embedding:
+  model: ViT-B-32-quickgelu   # the OpenAI weights were trained with QuickGELU
+  pretrained: openai
+  batch_size: 64
+  cache_dir: data/embeddings
+
+concepts:
+  path: concepts/generic_v1.txt
+  template: "a painting with {}"   # CLIP prompt; {} is replaced by each concept
+
+analysis:
+  n_permutations: 200
+  cv_folds: 5
+  n_bootstrap: 200          # split-half resamples per painting (analysis 1)
+  n_concept_components: 10  # concept scores summarised into this many visual dimensions
+  logreg_C: 0.01             # inverse L2 strength, fixed before looking at real results

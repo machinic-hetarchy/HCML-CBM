@@ -1,0 +1,152 @@
+a person
+a group of people
+a face
+a hand
+a child
+an elderly person
+a nude figure
+a horse
+a dog
+a cat
+a bird
+a cow
+a fish
+a boat
+a ship
+a house
+a building
+a tower
+a bridge
+a road
+a street
+a fence
+a wall
+a window
+a door
+a staircase
+a column
+a table
+a chair
+a bed
+a bottle
+a cup
+a bowl
+fruit
+flowers
+a vase
+a book
+a musical instrument
+a hat
+a dress
+a uniform
+a weapon
+a carriage
+a train
+a car
+a tree
+a forest
+a field
+a meadow
+grass
+a garden
+a mountain
+a hill
+a rock
+a cliff
+a river
+a lake
+the sea
+waves
+a beach
+a waterfall
+the sky
+clouds
+the sun
+the moon
+stars
+snow
+rain
+fog
+ice
+a village
+a city
+a harbour
+a farm
+a market
+an interior room
+a kitchen
+a ruin
+a desert
+a valley
+an island
+red
+orange
+yellow
+green
+blue
+purple
+pink
+brown
+black
+white
+grey
+gold
+silver
+warm colours
+cool colours
+muted colours
+saturated colours
+pastel colours
+monochrome palette
+high contrast
+low contrast
+bright light
+dim light
+strong shadows
+backlighting
+sunlight
+candlelight
+night scene
+daytime scene
+sunset light
+reflections on water
+a portrait composition
+a landscape composition
+a still life arrangement
+a close-up view
+a wide panoramic view
+a symmetrical composition
+an asymmetrical composition
+a centred subject
+a high horizon line
+a low horizon line
+a crowded scene
+a sparse scene
+empty space
+strong perspective depth
+a flat picture plane
+diagonal lines
+vertical lines
+horizontal lines
+curved lines
+geometric shapes
+organic shapes
+a grid pattern
+repeated patterns
+an abstract composition
+a realistic depiction
+a sketch
+a line drawing
+visible brushstrokes
+smooth blended paint
+thick impasto
+dots of paint
+thin washes of colour
+sharp outlines
+blurred edges
+fine detail
+loose rough handling
+a textured surface
+a framed border
+written text in the image
+a decorative ornament
