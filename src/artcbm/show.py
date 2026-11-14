@@ -1,4 +1,4 @@
-"""Small HTML cards for showing paintings and annotations inside the notebook.
+"""Small HTML cards for paintings and annotations, and the static method figures.
 
 HTML instead of matplotlib so Arabic and Chinese text render correctly.
 """
@@ -8,18 +8,41 @@ from __future__ import annotations
 import base64
 import html
 import io
+import textwrap
 from pathlib import Path
 
 import pandas as pd
-from IPython.display import HTML, display
+from IPython.display import HTML, SVG, display
 from PIL import Image
 
+from artcbm.config import REPO_ROOT
 from artcbm.plots import LANG_COLORS
 
 CELL = "padding:5px 12px;vertical-align:top;text-align:left;border:none;"
 SCALE = 1.4  # thumbnails and card widths, relative to the sizes given by callers
 TEXT = "font-size:1.1em;line-height:1.45"
 TABLE = "border-collapse:collapse;" + TEXT
+METHODS_DIR = REPO_ROOT / "notebooks" / "figures" / "methods"
+
+
+def method_figure(name: str) -> None:
+    """Show one of the static method figures by file stem, e.g. "03_shuffle_tests"."""
+    display(SVG(filename=str(METHODS_DIR / f"{name}.svg")))
+
+
+def chain_results(results: dict[int, str], width: int = 24, max_lines: int = 3) -> None:
+    """Show the argument chain with one result per box (boxes 1 to 5), filled into the
+    SVG template. Each result is wrapped to `max_lines` lines of about `width` characters;
+    a result that needs more lines raises an error instead of being cut off."""
+    svg = (METHODS_DIR / "02_argument_chain_results.svg.tmpl").read_text()
+    for box in range(1, 6):
+        wrapped = textwrap.wrap(results.get(box, ""), width=width)
+        if len(wrapped) > max_lines:
+            raise ValueError(f"result for box {box} needs {len(wrapped)} lines: {wrapped}")
+        wrapped += [""] * (max_lines - len(wrapped))
+        for i, line in enumerate(wrapped, start=1):
+            svg = svg.replace(f"{{r{box}_{i}}}", html.escape(line, quote=False))
+    display(SVG(data=svg))
 
 
 def thumb(path: Path, height: int = 200) -> str:
