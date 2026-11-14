@@ -13,6 +13,9 @@ FIG_DIR = REPO_ROOT / "outputs" / "figures"
 # First three categorical slots of a colour-blind-checked palette (validated all-pairs).
 LANG_COLORS = {"english": "#2a78d6", "arabic": "#eb6834", "chinese": "#1baf7a"}
 NEUTRAL = "#898781"  # nulls, baselines, residual
+# Models and vocabularies (kept apart from the language colours; validated all-pairs).
+MODEL_COLORS = {"bottleneck": "#6250d6", "black box": "#eda100", "other people": "#008300"}
+VOCAB_COLORS = {"generic": NEUTRAL, "translated": "#eda100", "native": "#6250d6"}
 INK, INK_2, GRID = "#0b0b0b", "#52514e", "#e1e0d9"
 
 

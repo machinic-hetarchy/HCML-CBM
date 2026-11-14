@@ -27,12 +27,15 @@ class EmbeddingConfig:
     pretrained: str
     batch_size: int
     cache_dir: Path
+    multilingual_model: str
+    multilingual_pretrained: str
 
 
 @dataclass(frozen=True)
 class ConceptsConfig:
     path: Path
-    template: str
+    templates: dict[str, str]
+    translated: dict[str, Path]
 
 
 @dataclass(frozen=True)
@@ -42,6 +45,7 @@ class AnalysisConfig:
     n_bootstrap: int
     n_concept_components: int
     logreg_C: float
+    forward_Cs: list[float]
 
 
 @dataclass(frozen=True)
@@ -80,9 +84,13 @@ def load_config(path: str | Path = REPO_ROOT / "config.yaml") -> Config:
             pretrained=e["pretrained"],
             batch_size=e["batch_size"],
             cache_dir=_abs(e["cache_dir"]),
+            multilingual_model=e["multilingual_model"],
+            multilingual_pretrained=e["multilingual_pretrained"],
         ),
         concepts=ConceptsConfig(
-            path=_abs(raw["concepts"]["path"]), template=raw["concepts"]["template"]
+            path=_abs(raw["concepts"]["path"]),
+            templates=dict(raw["concepts"]["templates"]),
+            translated={k: _abs(v) for k, v in raw["concepts"]["translated"].items()},
         ),
         analysis=AnalysisConfig(**raw["analysis"]),
     )

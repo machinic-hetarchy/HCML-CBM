@@ -62,17 +62,33 @@ def shuffle_within_painting(labels: np.ndarray, rng) -> np.ndarray:
     return rng.permuted(labels.reshape(n_p, n_l * n), axis=1).reshape(n_p, n_l, n)
 
 
-def divergence_gap_null(labels, n_emotions, n_perm, n_boot, seed) -> np.ndarray:
-    """Null distribution of mean(cross) - mean(within) when language labels are
-    shuffled within each painting, i.e. when languages are exchangeable."""
+def shuffle_within_language(labels: np.ndarray, rng) -> np.ndarray:
+    """Within each language, move labels across paintings at random. Each language keeps
+    its overall label mix; which painting a label lands on becomes random."""
+    out = labels.copy()
+    n_p, n_l, n = labels.shape
+    for lang in range(n_l):
+        out[:, lang, :] = rng.permuted(labels[:, lang, :].ravel()).reshape(n_p, n)
+    return out
+
+
+def divergence_gap_null(labels, n_emotions, n_perm, n_boot, seed, shuffle="painting"):
+    """Null distribution of mean(cross) - mean(within).
+
+    shuffle="painting": languages swapped within each painting (languages exchangeable).
+    shuffle="language": labels moved across paintings within each language (only each
+    language's label mix is kept).
+    Returns (gaps, within) where within is (n_perm, languages).
+    """
+    shuffler = {"painting": shuffle_within_painting, "language": shuffle_within_language}
     rng = np.random.default_rng(seed)
-    gaps = np.empty(n_perm)
+    gaps, within = np.empty(n_perm), np.empty((n_perm, labels.shape[1]))
     for k in range(n_perm):
         w, c, _ = split_half_divergence(
-            shuffle_within_painting(labels, rng), n_emotions, n_boot, seed + 1 + k
+            shuffler[shuffle](labels, rng), n_emotions, n_boot, seed + 1 + k
         )
-        gaps[k] = c.mean() - w.mean()
-    return gaps
+        gaps[k], within[k] = c.mean() - w.mean(), w.mean(axis=0)
+    return gaps, within
 
 
 # ---------------------------------------------------------------- 3. variance split
@@ -200,11 +216,23 @@ def shuffle_labels_within(y: np.ndarray, groups: np.ndarray, rng) -> np.ndarray:
     return out
 
 
+def _quiet(fn, *args):
+    """Run fn without ConvergenceWarnings (worker processes do not inherit the notebook's
+    warning filters; a few weakly regularised fits stop early)."""
+    import warnings
+
+    from sklearn.exceptions import ConvergenceWarning
+
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore", ConvergenceWarning)
+        return fn(*args)
+
+
 def _parallel(fn, args_per_task, n_jobs=-1) -> np.ndarray:
     """Run fn over tasks in parallel. Arrays go in as arguments so joblib memory-maps
     them; one BLAS thread per worker avoids oversubscribing the cores."""
     with parallel_config(backend="loky", inner_max_num_threads=1):
-        return np.array(Parallel(n_jobs=n_jobs)(delayed(fn)(*a) for a in args_per_task))
+        return np.array(Parallel(n_jobs=n_jobs)(delayed(_quiet)(fn, *a) for a in args_per_task))
 
 
 def permutation_null(X, y, groups, n_perm, n_folds, C, seed) -> np.ndarray:
@@ -240,3 +268,27 @@ def _one_swap(df, emotions, components, kind, n_folds, C, seed, swap_seed):
 def permutation_p(real: float, null: np.ndarray) -> float:
     """One-sided p-value with the +1 correction."""
     return (1 + (null >= real).sum()) / (1 + len(null))
+
+
+def describe_p(real: float, null: np.ndarray, what: str = "shuffles") -> str:
+    """'beat all 200 shuffles (p < 0.01)', or 'p = 0.034' when some shuffle reached it.
+
+    With N shuffles the smallest possible p is 1 / (N + 1), so an exact p is not
+    reported when the real value beats every shuffle.
+    """
+    n = len(null)
+    if (null >= real).sum() == 0:
+        bound = next(b for b in (0.001, 0.01, 0.05, 1.0) if 1 / (n + 1) < b)
+        return f"beat all {n} {what} (p < {bound:g})"
+    return f"p = {permutation_p(real, null):.3f}"
+
+
+def shuffle_emotions_within_language(df: pd.DataFrame, rng) -> pd.DataFrame:
+    """Table version of `shuffle_within_language`: emotions move across paintings within
+    each language, so each language keeps its label mix."""
+    out = df.copy()
+    for _, idx in df.groupby("language").indices.items():
+        out.iloc[idx, out.columns.get_loc("emotion")] = df["emotion"].to_numpy()[
+            rng.permutation(idx)
+        ]
+    return out

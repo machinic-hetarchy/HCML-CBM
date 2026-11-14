@@ -10,17 +10,26 @@ data:
   languages: [english, arabic, chinese]   # exact strings in the CSV (lowercase)
   emotions: [amusement, awe, contentment, excitement, anger, disgust, fear, sadness, something else]
   min_annotations_per_language: 5
-  max_paintings: 8000        # cap on paintings kept; 843 pass the filter, so no-op for now
+  max_paintings: 8000        # cap; 843 pass the filter and 840 have images, so no-op for now
 
 embedding:
   model: ViT-B-32-quickgelu   # the OpenAI weights were trained with QuickGELU
   pretrained: openai
   batch_size: 64
   cache_dir: data/embeddings
+  # multilingual CLIP for the encoder swap and non-English vocabularies
+  multilingual_model: xlm-roberta-base-ViT-B-32
+  multilingual_pretrained: laion5b_s13b_b90k
 
 concepts:
   path: concepts/generic_v1.txt
-  template: "a painting with {}"   # CLIP prompt; {} is replaced by each concept
+  templates:                 # CLIP prompt per language; {} is replaced by each concept
+    english: "a painting with {}"
+    arabic: "لوحة فيها {}"
+    chinese: "一幅有{}的画"
+  translated:                # line-aligned translations of the generic list
+    arabic: concepts/generic_v1_arabic.txt
+    chinese: concepts/generic_v1_chinese.txt
 
 analysis:
   n_permutations: 200
@@ -28,3 +37,4 @@ analysis:
   n_bootstrap: 200          # split-half resamples per painting (analysis 1)
   n_concept_components: 10  # concept scores summarised into this many visual dimensions
   logreg_C: 0.01             # inverse L2 strength, fixed before looking at real results
+  forward_Cs: [0.001, 0.01, 0.1, 1.0]  # forward CBM: C chosen from these inside each training fold
