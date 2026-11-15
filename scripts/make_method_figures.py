@@ -523,35 +523,39 @@ def fig_encoder():
 
 # ---------------------------------------------------------------- 9. vocabularies
 def fig_vocab():
-    W, H = 960, 330
+    W, H = 960, 400
     b = [text(24, 30, "Which concept list each language's head uses", 14, TEXT, weight=500)]
     words = {
         "generic": ["a boat · the sea · red"] * 3,
         "translated": ["a boat · the sea · red", "قارب · البحر · أحمر", "小船 · 大海 · 红色"],
-        "native": ["colors · woman · dark", "رجل · لون · سماء", "感到 · 满足 · 女人"],
+        "native": ["colors · man · beautiful", "رجل · لون · جميلة", "感到 · 满足 · 女人"],
+        "native, no|feeling words": ["colors · man · woman", "رجل · لون · اشجار", "女人 · 穿着 · 男人"],
     }
-    cw, x0 = 160, 112
+    cw, x0 = 152, 134
     for j, l in enumerate(LANGS):
         cx = x0 + j * (cw + 12)
         b += [text(cx + cw / 2, 62, f"{l} head", 12, LANG[l]["text"], "middle")]
         b += [f'<rect x="{cx}" y="72" width="{cw}" height="3" rx="1.5" fill="{LANG[l]["dot"]}"/>']
     for r, (name, ws) in enumerate(words.items()):
         y = 88 + r * 62
-        b += [text(24, y + 22, name, 13, TEXT, weight=500)]
+        label = name.split("|")
+        b += lines(24, y + 22 - (len(label) - 1) * 8, label, 13, TEXT, weight=500, lh=16)
         for j in range(3):
             cx = x0 + j * (cw + 12)
             b += [box(cx, y, cw, 44), text(cx + cw / 2, y + 22, ws[j], 12, TEXT, "middle")]
-    b += [text(24, 296, "all three scored with the multilingual CLIP; same list length", 11, TEXT2)]
+    b += [text(24, 362, "all four scored with the multilingual CLIP; same list length", 11, TEXT2)]
     X = 660
     b += [text(X, 30, "Where native words come from", 14, TEXT, weight=500)]
-    b += [box(X, 70, 150, 64)] + lines(X + 75, 92, ["479 other paintings", "(their explanations)"], 12, TEXT, "middle", lh=18)
-    b += [arrow(X + 75, 138, X + 75, 182)]
-    b += lines(X + 75, 202, ["most common words", "per language", "→ native lists"], 12, TEXT2, "middle", lh=17)
-    b += [f'<line x1="{X + 170}" y1="62" x2="{X + 170}" y2="270" stroke="{BOX_STROKE}" stroke-dasharray="4 4"/>']
+    b += [box(X, 70, 150, 64)] + lines(X + 75, 92, ["71,244 other paintings", "(original ArtELingo)"], 12, TEXT, "middle", lh=18)
+    b += [arrow(X + 75, 138, X + 75, 170)]
+    b += lines(X + 75, 188, ["most common words", "that are concepts", "→ native lists"], 12, TEXT2, "middle", lh=17)
+    b += [arrow(X + 75, 236, X + 75, 266)]
+    b += [box(X, 270, 150, 64, ACC_FILL, ACC_STROKE)] + lines(X + 75, 292, ["feeling words labelled", "and dropped"], 12, ACC_TEXT, "middle", lh=18)
+    b += [f'<line x1="{X + 170}" y1="62" x2="{X + 170}" y2="340" stroke="{BOX_STROKE}" stroke-dasharray="4 4"/>']
     b += [box(X + 186, 70, 92, 64, ACC_FILL, ACC_STROKE)] + lines(X + 232, 92, ["our 840", "paintings"], 12, ACC_TEXT, "middle", lh=18)
     b += lines(X + 232, 168, ["tested here;", "never mined,", "so nothing leaks"], 11, TEXT2, "middle", lh=16)
-    save("09_vocabularies", svg(W, H, b, "Three concept vocabularies",
-                                "Generic, translated and native concept lists per language head; native words are mined only from paintings outside the tested set."))
+    save("09_vocabularies", svg(W, H, b, "Four concept vocabularies",
+                                "Generic, translated, native and native-without-feeling-words concept lists per language head; native words are mined only from paintings outside the tested set."))
 
 
 # ---------------------------------------------------------------- 10. edit test

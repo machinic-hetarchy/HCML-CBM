@@ -15,7 +15,12 @@ LANG_COLORS = {"english": "#378ADD", "arabic": "#D85A30", "chinese": "#1D9E75"}
 NEUTRAL = "#898781"  # nulls, baselines, residual
 # Models and vocabularies (kept apart from the language colours; validated all-pairs).
 MODEL_COLORS = {"bottleneck": "#6250d6", "black box": "#eda100", "other people": "#008300"}
-VOCAB_COLORS = {"generic": NEUTRAL, "translated": "#eda100", "native": "#6250d6"}
+VOCAB_COLORS = {  # the filtered native list shares the native colour (drawn hatched)
+    "generic": NEUTRAL,
+    "translated": "#eda100",
+    "native": "#6250d6",
+    "native, no feeling words": "#6250d6",
+}
 INK, INK_2, GRID = "#0b0b0b", "#52514e", "#e1e0d9"
 
 

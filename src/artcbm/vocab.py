@@ -281,13 +281,16 @@ def normalise(word: str, language: str) -> str:
     return re.sub("[أإآ]", "ا", word).replace("ة", "ه").replace("ى", "ي")
 
 
-def mine_vocabulary(captions: pd.Series, language: str, k: int) -> list[str]:
+def mine_vocabulary(captions: pd.Series, language: str, k: int, with_counts: bool = False):
     """The k words that appear in the most explanations (each explanation counts once).
-    Spelling variants are counted together and shown in their most common spelling."""
+    Spelling variants are counted together and shown in their most common spelling.
+    With `with_counts`, also returns how many explanations contain each word."""
     counts, spellings = Counter(), {}
     for text in captions:
         words = tokens(str(text), language)
         counts.update({normalise(w, language) for w in words})
         for w in words:
             spellings.setdefault(normalise(w, language), Counter())[w] += 1
-    return [spellings[w].most_common(1)[0][0] for w, _ in counts.most_common(k)]
+    top = counts.most_common(k)
+    words = [spellings[w].most_common(1)[0][0] for w, _ in top]
+    return (words, [n for _, n in top]) if with_counts else words

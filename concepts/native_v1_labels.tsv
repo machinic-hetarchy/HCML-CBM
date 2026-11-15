@@ -1,0 +1,1501 @@
+language	word	translation	label	same_as
+english	colors		concept	
+english	man		concept	
+english	woman		concept	
+english	people		concept	
+english	face		concept	
+english	dark		concept	
+english	scene		concept	
+english	beautiful		feeling	
+english	color		concept	colors
+english	blue		concept	
+english	white		concept	
+english	love		feeling	
+english	sad		feeling	
+english	bright		concept	
+english	red		concept	
+english	water		concept	
+english	sky		concept	
+english	background		concept	
+english	black		concept	
+english	peaceful		feeling	
+english	happy		feeling	
+english	trees		concept	
+english	day		concept	
+english	nice		feeling	
+english	flowers		concept	
+english	green		concept	
+english	expression		concept	
+english	eyes		concept	
+english	person		concept	people
+english	calm		feeling	
+english	life		concept	
+english	sense		none	
+english	light		concept	
+english	yellow		concept	
+english	women		concept	woman
+english	good		feeling	
+english	woman's		concept	woman
+english	lines		concept	
+english	content		feeling	
+english	interesting		feeling	
+english	contrast		concept	
+english	child		concept	
+english	figure		concept	
+english	old		concept	
+english	dress		concept	
+english	man's		concept	man
+english	men		concept	man
+english	don't		none	
+english	shapes		concept	
+english	simple		concept	
+english	great		feeling	
+english	place		concept	
+english	want		none	
+english	use		none	
+english	lady		concept	woman
+english	relaxing		feeling	
+english	used		none	
+english	nature		concept	
+english	girl		concept	
+english	portrait		concept	
+english	scary		feeling	
+english	calming		feeling	calm
+english	different		none	
+english	warm		concept	
+english	body		concept	
+english	figures		concept	figure
+english	head		concept	
+english	hair		concept	
+english	fun		feeling	
+english	young		concept	
+english	awe		feeling	
+english	details		concept	
+english	tree		concept	trees
+english	pretty		feeling	
+english	clouds		concept	
+english	landscape		concept	
+english	town		concept	
+english	orange		concept	
+english	sitting		concept	
+english	faces		concept	face
+english	subject		concept	
+english	shows		none	
+english	style		concept	
+english	appear		none	
+english	small		concept	
+english	know		none	
+english	funny		feeling	
+english	lovely		feeling	
+english	hard		none	
+english	wonder		feeling	
+english	naked		concept	
+english	relaxed		feeling	relaxing
+english	sun		concept	
+english	wearing		concept	
+english	facial		concept	face
+english	holding		concept	
+english	trying		none	
+english	long		concept	
+english	large		concept	
+english	remind		none	
+english	having		none	
+english	mountains		concept	
+english	house		concept	
+english	brown		concept	
+english	horse		concept	
+english	baby		concept	
+english	city		concept	
+english	sadness		feeling	sad
+english	paint		concept	
+english	right		concept	
+english	photo		concept	
+english	he's		none	
+english	soft		concept	
+english	colorful		concept	
+english	amazing		feeling	
+english	setting		concept	
+english	view		concept	
+english	abstract		concept	
+english	enjoying		feeling	
+english	building		concept	
+english	exciting		feeling	
+english	making		none	
+english	she's		none	
+english	confused		feeling	
+english	peace		feeling	peaceful
+english	sure		none	
+english	realistic		concept	
+english	creepy		feeling	
+english	pink		concept	
+english	mother		concept	
+english	boat		concept	
+english	leaves		concept	
+english	detailed		concept	details
+english	darkness		concept	dark
+english	fear		feeling	
+english	buildings		concept	building
+english	strokes		concept	
+english	table		concept	
+english	excited		feeling	exciting
+english	vibrant		concept	
+english	coming		none	
+english	away		none	
+english	big		concept	large
+english	eye		concept	eyes
+english	left		concept	
+english	grass		concept	
+english	doesn't		none	
+english	middle		concept	
+english	shadows		concept	
+english	deep		concept	
+english	does		none	
+english	tones		concept	
+english	snow		concept	
+english	boring		feeling	
+english	ground		concept	
+english	serene		feeling	
+english	enjoy		feeling	enjoying
+english	dressed		concept	
+english	bad		feeling	
+english	clothing		concept	
+english	cool		feeling	
+english	field		concept	
+english	gloomy		feeling	
+english	dead		concept	
+english	beach		concept	
+english	angry		feeling	
+english	mountain		concept	mountains
+english	cold		concept	
+english	world		concept	
+english	standing		concept	
+english	family		concept	
+english	brings		none	
+english	forest		concept	
+english	walking		concept	
+english	guy		concept	man
+english	sea		concept	
+english	real		none	
+english	tell		none	
+english	home		concept	
+english	ocean		concept	sea
+english	river		concept	
+english	dog		concept	
+english	beauty		feeling	beautiful
+english	hand		concept	
+english	playing		concept	
+english	lack		none	
+english	pleasant		feeling	
+english	animals		concept	
+english	ready		none	
+english	hat		concept	
+english	doing		none	
+english	they're		none	
+english	smile		concept	
+english	can't		none	
+english	fruit		concept	
+english	amusing		feeling	
+english	seeing		none	
+english	weird		feeling	
+english	boats		concept	boat
+english	blues		concept	blue
+english	jesus		concept	
+english	children		concept	child
+english	contentment		feeling	content
+english	stand		concept	standing
+english	bored		feeling	boring
+english	lonely		feeling	
+english	skin		concept	
+english	clothes		concept	clothing
+english	curious		feeling	
+english	there's		none	
+english	angel		concept	
+english	village		concept	
+english	especially		none	
+english	death		concept	dead
+english	purple		concept	
+english	storm		concept	
+english	shades		concept	
+english	night		concept	
+english	shape		concept	shapes
+english	muted		concept	
+english	hands		concept	hand
+english	quiet		feeling	
+english	room		concept	
+english	human		concept	people
+english	brush		concept	
+english	blood		concept	
+english	strong		concept	
+english	bold		concept	
+english	waves		concept	
+english	nude		concept	naked
+english	colored		concept	
+english	boy		concept	
+english	create		none	
+english	book		concept	
+english	soothing		feeling	
+english	sight		concept	
+english	lake		concept	
+english	getting		none	
+english	religious		concept	
+english	expressions		concept	expression
+english	maybe		none	
+english	angels		concept	angel
+english	gray		concept	
+english	summer		concept	
+english	showing		none	
+english	working		concept	
+english	taking		none	
+english	mans		concept	man
+english	stands		concept	standing
+english	sketch		concept	
+english	flower		concept	flowers
+english	odd		feeling	weird
+english	lost		feeling	
+english	outside		concept	
+english	clear		concept	
+english	busy		concept	
+english	greens		concept	green
+english	important		none	
+english	thought		none	
+english	wall		concept	
+english	come		none	
+english	strange		feeling	weird
+english	vase		concept	
+english	fall		concept	
+english	colours		concept	colors
+english	dull		feeling	
+english	bird		concept	
+english	pose		concept	
+english	center		concept	
+english	shading		concept	
+english	amused		feeling	amusing
+english	excitement		feeling	exciting
+english	horses		concept	horse
+english	grey		concept	gray
+english	viewer		none	
+english	bring		none	
+english	area		concept	
+english	story		concept	
+english	contrasts		concept	contrast
+english	ominous		feeling	
+english	pleasing		feeling	
+english	distance		concept	
+english	evil		feeling	
+english	sunset		concept	
+english	movement		concept	
+english	battle		concept	
+english	open		concept	
+english	war		concept	
+english	attention		none	
+english	design		concept	
+english	walk		concept	walking
+english	ship		concept	boat
+english	couple		concept	
+english	natural		concept	
+english	lots		none	
+english	new		concept	
+english	tone		concept	tones
+english	line		concept	lines
+english	sunny		concept	
+english	air		concept	
+english	rich		concept	
+english	features		concept	
+english	seen		none	
+english	waiting		concept	
+english	watching		concept	
+english	land		concept	
+english	winter		concept	
+english	uncomfortable		feeling	
+english	dancing		concept	
+english	inside		concept	
+english	window		concept	
+english	blend		concept	
+english	depicted		none	
+english	gold		concept	
+english	perfect		feeling	
+english	somewhat		none	
+english	overall		none	
+english	rest		none	
+english	garden		concept	
+english	animal		concept	animals
+english	foreground		concept	
+english	near		concept	
+english	tall		concept	
+english	confusing		feeling	confused
+english	inviting		feeling	
+english	happening		none	
+english	high		concept	
+english	spring		concept	
+english	depiction		none	
+english	rocks		concept	
+english	thinking		none	
+english	mind		none	
+english	cute		feeling	
+english	texture		concept	
+english	birds		concept	bird
+english	street		concept	
+english	inspiring		feeling	
+english	scenery		concept	
+english	impressive		feeling	
+english	comfortable		feeling	
+english	artwork		none	
+english	golden		concept	gold
+english	unique		feeling	
+english	road		concept	
+english	depth		concept	
+english	pop		none	
+english	imagine		none	
+english	depressing		feeling	
+english	creates		none	
+english	pale		concept	
+english	tired		feeling	
+english	reflection		concept	
+english	care		none	
+english	help		none	
+english	waters		concept	water
+english	giant		concept	large
+english	cross		concept	
+english	girls		concept	girl
+english	nicely		none	
+english	moment		none	
+english	fish		concept	
+english	reading		concept	
+english	chair		concept	
+english	pain		feeling	
+english	food		concept	
+english	posture		concept	
+english	female		concept	woman
+english	reds		concept	red
+english	hope		feeling	
+english	vivid		concept	
+english	ships		concept	boat
+english	lighting		concept	
+english	emotion		feeling	
+english	paintings		none	
+english	sharp		concept	
+english	confusion		feeling	confused
+english	powerful		feeling	
+english	wonderful		feeling	
+english	subjects		concept	subject
+english	gorgeous		feeling	
+english	times		none	
+english	happiness		feeling	happy
+english	woods		concept	forest
+english	form		concept	
+english	feelings		feeling	emotion
+english	giving		none	
+english	party		concept	
+english	slightly		none	
+english	adds		none	
+english	houses		concept	house
+english	shade		concept	
+english	outfit		concept	
+english	live		none	
+english	womans		concept	woman
+english	group		concept	
+english	country		concept	
+english	coloring		concept	colors
+english	church		concept	
+english	appealing		feeling	
+english	add		none	
+english	filled		none	
+english	path		concept	road
+english	objects		concept	
+english	shadow		concept	shadows
+english	play		concept	
+english	surrounded		none	
+english	scared		feeling	fear
+english	surrounding		concept	
+english	hills		concept	
+english	dont		none	
+english	canvas		concept	
+english	evokes		none	
+english	arms		concept	
+english	plain		concept	
+english	depicts		none	
+english	laugh		concept	
+english	isn't		none	
+english	staring		concept	
+english	bodies		concept	body
+english	poor		concept	
+english	space		concept	
+english	set		none	
+english	close		none	
+english	majestic		feeling	
+english	ugly		feeling	
+english	joy		feeling	
+english	understand		none	
+english	pattern		concept	
+english	ladies		concept	woman
+english	probably		none	
+english	characters		concept	
+english	contrasting		concept	
+english	bed		concept	
+english	reason		none	
+english	mysterious		feeling	
+english	bunch		none	
+english	hanging		concept	
+english	bland		feeling	
+english	music		concept	
+english	supposed		none	
+english	covered		concept	
+english	fearful		feeling	fear
+english	matter		none	
+english	that's		none	
+english	type		none	
+english	confident		feeling	
+english	images		none	
+english	effect		none	
+english	random		none	
+english	simplicity		concept	
+english	heavy		concept	
+english	power		feeling	
+english	happen		none	
+english	playful		feeling	
+english	scheme		concept	
+english	beautifully		feeling	
+english	rough		concept	
+english	anger		feeling	angry
+english	far		concept	
+english	hill		concept	hills
+english	darker		concept	dark
+english	bridge		concept	
+english	farm		concept	
+english	blurry		concept	
+english	perspective		concept	
+english	smoke		concept	
+english	half		concept	
+english	character		concept	characters
+english	suggest		none	
+english	mouth		concept	
+english	energy		feeling	
+english	did		none	
+english	wind		concept	
+english	absolutely		none	
+english	days		none	
+english	comforting		feeling	
+english	disturbing		feeling	
+english	huge		concept	large
+english	pastel		concept	
+english	moving		concept	
+english	beard		concept	
+english	dying		concept	
+english	focus		none	
+english	plants		concept	
+english	dreary		feeling	
+english	end		none	
+english	floating		concept	
+english	sit		concept	sitting
+english	yellows		concept	yellow
+english	smiling		concept	smile
+english	suggests		none	
+english	laying		concept	
+english	cat		concept	
+english	older		concept	old
+english	fancy		concept	
+english	point		none	
+english	hiding		concept	
+english	weather		concept	
+english	crowd		concept	people
+english	morning		concept	
+arabic	رجل	man	concept	
+arabic	لون	colour	concept	
+arabic	اشجار	trees	concept	
+arabic	ابيض	white	concept	
+arabic	جميلة	beautiful	feeling	
+arabic	الوان	colours	concept	لون
+arabic	مجموعة	group	concept	
+arabic	امرأة	woman	concept	
+arabic	خضراء	green	concept	
+arabic	سماء	sky	concept	
+arabic	اسود	black	concept	
+arabic	سيدة	lady	concept	امرأة
+arabic	فتاة	girl	concept	
+arabic	ملابس	clothes	concept	
+arabic	ترتدي	(she) wears	concept	
+arabic	جميل	beautiful	feeling	جميلة
+arabic	بحر	sea	concept	
+arabic	احمر	red	concept	
+arabic	بيضاء	white	concept	ابيض
+arabic	اشخاص	persons	concept	
+arabic	يرتدي	(he) wears	concept	ترتدي
+arabic	كبير	big	concept	
+arabic	صغيرة	small	concept	
+arabic	ارض	ground, land	concept	
+arabic	تجلس	(she) sits	concept	
+arabic	ناس	people	concept	اشخاص
+arabic	ازرق	blue	concept	
+arabic	كبيرة	big	concept	كبير
+arabic	لونه	its colour	concept	لون
+arabic	سوداء	black	concept	اسود
+arabic	شعر	hair; also 'felt'	concept	
+arabic	اخضر	green	concept	خضراء
+arabic	صغير	small	concept	صغيرة
+arabic	عالية	high	concept	
+arabic	اصفر	yellow	concept	
+arabic	رائع	wonderful	feeling	
+arabic	مكان	place	concept	
+arabic	فستان	dress	concept	
+arabic	يجلس	(he) sits	concept	تجلس
+arabic	حزن	sadness	feeling	
+arabic	لونها	its colour	concept	لون
+arabic	يظهر	appears	none	
+arabic	مختلفة	different	none	
+arabic	شكل	shape	concept	
+arabic	رائعه	wonderful	feeling	رائع
+arabic	مياه	water	concept	
+arabic	زرقاء	blue	concept	ازرق
+arabic	ملامح	features (face)	concept	
+arabic	يقف	(he) stands	concept	
+arabic	جبال	mountains	concept	
+arabic	انها	it is	none	
+arabic	عاريه	naked	concept	
+arabic	رجال	men	concept	رجل
+arabic	صافيه	clear	concept	
+arabic	زهور	flowers	concept	
+arabic	طويل	long, tall	concept	
+arabic	بحيره	lake	concept	
+arabic	شخص	person	concept	اشخاص
+arabic	مرأة	woman	concept	امرأة
+arabic	منظر	view	concept	
+arabic	حمراء	red	concept	احمر
+arabic	امام	in front of	concept	
+arabic	تقف	(she) stands	concept	يقف
+arabic	قبعة	hat	concept	
+arabic	منزل	house	concept	
+arabic	للغاية	extremely	none	
+arabic	تظهر	appears	none	
+arabic	منازل	houses	concept	منزل
+arabic	خلفيه	background	concept	
+arabic	كثيرة	many	none	
+arabic	كرسي	chair	concept	
+arabic	جمال	beauty	feeling	جميلة
+arabic	ويبدو	and seems	none	
+arabic	حديقة	garden	concept	
+arabic	إليها	to it	none	
+arabic	مدينة	city	concept	
+arabic	بعضها	some of them	none	
+arabic	ويوجد	and there is	none	
+arabic	بيوت	houses	concept	منزل
+arabic	شعرت	I felt	feeling	
+arabic	طفل	child	concept	
+arabic	لقد	indeed	none	
+arabic	حيث	where	none	
+arabic	وجه	face	concept	
+arabic	نساء	women	concept	امرأة
+arabic	ملونة	coloured	concept	
+arabic	نظرت	I looked	none	
+arabic	فوق	above	concept	
+arabic	بجانب	beside	concept	
+arabic	اشكال	shapes	concept	شكل
+arabic	شمس	sun	concept	
+arabic	شجرة	tree	concept	اشجار
+arabic	طريق	road	concept	
+arabic	شاطئ	beach	concept	
+arabic	غابة	forest	concept	
+arabic	عديد	many	none	
+arabic	نهر	river	concept	
+arabic	طويله	long, tall	concept	طويل
+arabic	شعرها	her hair	concept	شعر
+arabic	صوره	picture	none	
+arabic	طاولة	table	concept	
+arabic	يده	his hand	concept	
+arabic	بني	brown	concept	
+arabic	مما	which	none	
+arabic	خطوط	lines	concept	
+arabic	الي	to	none	
+arabic	يوحي	suggests	none	
+arabic	تحمل	(she) carries	concept	
+arabic	صفراء	yellow	concept	اصفر
+arabic	نباتات	plants	concept	
+arabic	يدها	her hand	concept	يده
+arabic	اعشاب	grass, herbs	concept	
+arabic	مليئة	full	none	
+arabic	بعضهم	some of them	none	
+arabic	يمسك	(he) holds	concept	
+arabic	كأنها	as if it	none	
+arabic	طبيعة	nature	concept	
+arabic	تعطي	gives	none	
+arabic	تفاصيل	details	concept	
+arabic	اوراق	leaves	concept	
+arabic	عجوز	old person	concept	
+arabic	رسمه	its drawing	none	
+arabic	اخرى	other	none	
+arabic	هدوء	calm	feeling	
+arabic	مذهل	amazing	feeling	
+arabic	داخل	inside	concept	
+arabic	رضا	contentment	feeling	
+arabic	ماء	water	concept	مياه
+arabic	وهناك	and there is	none	
+arabic	ورود	roses	concept	زهور
+arabic	احد	one	none	
+arabic	وكأنها	as if it	none	
+arabic	اخر	other	none	
+arabic	صخور	rocks	concept	
+arabic	ينظر	(he) looks	concept	
+arabic	بيت	house	concept	منزل
+arabic	مشهد	scene	concept	
+arabic	حائط	wall	concept	
+arabic	هادئة	calm	feeling	هدوء
+arabic	وترتدي	and (she) wears	concept	ترتدي
+arabic	تمسك	(she) holds	concept	يمسك
+arabic	عاري	naked	concept	عاريه
+arabic	تنظر	(she) looks	concept	ينظر
+arabic	ثياب	clothes	concept	ملابس
+arabic	اطفال	children	concept	طفل
+arabic	غيوم	clouds	concept	
+arabic	بسيطة	simple	concept	
+arabic	مرسومه	drawn	none	
+arabic	حول	around	concept	
+arabic	شديد	intense	none	
+arabic	تباين	contrast	concept	
+arabic	واضحه	clear	concept	
+arabic	رأسها	her head	concept	
+arabic	سعادة	happiness	feeling	
+arabic	متعة	pleasure	feeling	
+arabic	بدون	without	none	
+arabic	واسعه	wide	concept	
+arabic	بدلة	suit	concept	
+arabic	امامه	in front of him	concept	امام
+arabic	متداخلة	overlapping	concept	
+arabic	كتاب	book	concept	
+arabic	متناسقة	harmonious	feeling	
+arabic	قديمه	old	concept	
+arabic	لحيه	beard	concept	
+arabic	حصان	horse	concept	
+arabic	يحمل	(he) carries	concept	تحمل
+arabic	يجلسون	(they) sit	concept	تجلس
+arabic	ويرتدي	and (he) wears	concept	ترتدي
+arabic	يشبه	resembles	none	
+arabic	مباني	buildings	concept	
+arabic	جبل	mountain	concept	جبال
+arabic	واسع	wide	concept	واسعه
+arabic	فاكهة	fruit	concept	
+arabic	يعطي	gives	none	
+arabic	ازهار	flowers	concept	زهور
+arabic	شجر	trees	concept	اشجار
+arabic	يقوم	does	none	
+arabic	فنيه	artistic	concept	
+arabic	تشبه	resembles	none	
+arabic	عشب	grass	concept	اعشاب
+arabic	غرفة	room	concept	
+arabic	قصر	palace	concept	
+arabic	شاب	young man	concept	
+arabic	حشائش	grass	concept	اعشاب
+arabic	وجهه	his face	concept	وجه
+arabic	واشجار	and trees	concept	اشجار
+arabic	ايضا	also	none	
+arabic	خشبيه	wooden	concept	
+arabic	حاله	state	none	
+arabic	امامها	in front of her	concept	امام
+arabic	يثير	arouses (a feeling)	none	
+arabic	تقوم	does	none	
+arabic	اعلى	top	concept	
+arabic	توضح	shows	none	
+arabic	انهم	they are	none	
+arabic	حوله	around him	concept	حول
+arabic	رأسه	his head	concept	رأسها
+arabic	اسفل	bottom	concept	
+arabic	تداخل	overlap	concept	متداخلة
+arabic	وبعض	and some	none	
+arabic	راحة	comfort, relief	feeling	
+arabic	وجهها	her face	concept	وجه
+arabic	حماس	enthusiasm	feeling	
+arabic	قوارب	boats	concept	
+arabic	طفلة	little girl	concept	فتاة
+arabic	جالسه	sitting	concept	تجلس
+arabic	حولها	around her	concept	حول
+arabic	تحت	under	concept	
+arabic	عمل	work	none	
+arabic	ثوب	robe	concept	
+arabic	خشبي	wooden	concept	خشبيه
+arabic	زاهية	bright (colour)	concept	
+arabic	خوف	fear	feeling	
+arabic	حزينة	sad	feeling	حزن
+arabic	كثيفة	dense	concept	
+arabic	مراكب	boats	concept	قوارب
+arabic	مذهلة	amazing	feeling	مذهل
+arabic	قصير	short	concept	
+arabic	بجوار	next to	concept	بجانب
+arabic	يقفون	(they) stand	concept	يقف
+arabic	غريبة	strange	feeling	
+arabic	التى	which	none	
+arabic	يرتدون	(they) wear	concept	ترتدي
+arabic	يدل	indicates	none	
+arabic	قديم	old	concept	قديمه
+arabic	السن	age	concept	
+arabic	تضع	(she) puts	concept	
+arabic	ذهول	astonishment	feeling	
+arabic	برتقالي	orange	concept	
+arabic	سيدات	ladies	concept	امرأة
+arabic	وجود	presence	none	
+arabic	توحي	suggests	none	
+arabic	قارب	boat	concept	قوارب
+arabic	حيوانات	animals	concept	
+arabic	لرجل	of a man	concept	رجل
+arabic	فتيات	girls	concept	فتاة
+arabic	منتصف	middle	concept	
+arabic	حياة	life	concept	
+arabic	غريب	strange	feeling	غريبة
+arabic	مبهجة	cheerful	feeling	
+arabic	منضدة	table	concept	طاولة
+arabic	هادئ	calm	feeling	هدوء
+arabic	خلف	behind	concept	
+arabic	وبها	and in it	none	
+arabic	طعام	food	concept	
+arabic	بجانبها	beside her	concept	بجانب
+arabic	سحب	clouds	concept	غيوم
+arabic	رداء	cloak	concept	
+arabic	خلفها	behind her	concept	خلف
+arabic	تعبر	expresses	concept	
+arabic	تمثال	statue	concept	
+arabic	انيقه	elegant	feeling	
+arabic	تسير	(she) walks	concept	
+arabic	كما	as	none	
+arabic	ملك	king	concept	
+arabic	شعره	his hair	concept	شعر
+arabic	ويمسك	and (he) holds	concept	يمسك
+arabic	ضخمة	huge	concept	كبير
+arabic	رأس	head	concept	رأسها
+arabic	مظهر	appearance	none	
+arabic	وتمسك	and (she) holds	concept	يمسك
+arabic	مبنى	building	concept	مباني
+arabic	تناسق	harmony	feeling	متناسقة
+arabic	ورجل	and a man	concept	رجل
+arabic	وجميله	and beautiful	feeling	جميلة
+arabic	سفن	ships	concept	قوارب
+arabic	قاتمة	dark (colour)	concept	
+arabic	وامرأة	and a woman	concept	امرأة
+arabic	خضرة	greenery	concept	
+arabic	مخيف	scary	feeling	
+arabic	واضح	clear	none	
+arabic	تدل	indicates	none	
+arabic	قرية	village	concept	
+arabic	جسد	body	concept	
+arabic	مرسوم	drawn	none	
+arabic	بيده	in his hand	concept	يده
+arabic	عالي	high	concept	عالية
+arabic	يسير	(he) walks	concept	تسير
+arabic	حقل	field	concept	
+arabic	عليهم	on them	none	
+arabic	وتبدو	and (she) seems	concept	
+arabic	وقت	time	none	
+arabic	مخيفة	scary	feeling	مخيف
+arabic	وتنظر	and (she) looks	concept	ينظر
+arabic	وانها	and it is	none	
+arabic	بسيط	simple	concept	بسيطة
+arabic	امواج	waves	concept	
+arabic	بهجة	joy	feeling	
+arabic	وجميل	and beautiful	feeling	جميلة
+arabic	انيق	elegant	feeling	انيقه
+arabic	عدد	number	none	
+arabic	يديها	her hands	concept	يده
+arabic	اشياء	things	none	
+arabic	خلابة	breathtaking	feeling	
+arabic	جالس	sitting	concept	تجلس
+arabic	ثلاث	three	none	
+arabic	وقبعة	and a hat	concept	
+arabic	غروب	sunset	concept	
+arabic	ضوء	light	concept	
+arabic	زهرية	vase	concept	
+arabic	غضب	anger	feeling	
+arabic	زرع	crops	concept	
+arabic	طبيعي	natural	concept	
+arabic	موسيقية	musical	concept	
+arabic	بجانبه	beside him	concept	بجانب
+arabic	ضخم	huge	concept	كبير
+arabic	ويظهر	and appears	none	
+arabic	مركب	boat	concept	قوارب
+arabic	ولا	and not	none	
+arabic	طفلها	her child	concept	طفل
+arabic	طيور	birds	concept	
+arabic	قطعة	piece	none	
+arabic	بيدها	in her hand	concept	يده
+arabic	رجلان	two men	concept	رجل
+arabic	سفينة	ship	concept	قوارب
+arabic	يقومون	(they) do	none	
+arabic	ورد	roses	concept	زهور
+arabic	جانب	side	none	
+arabic	شارع	street	concept	
+arabic	منطقة	area	concept	
+arabic	كلب	dog	concept	
+arabic	يضع	(he) puts	concept	
+arabic	صحراء	desert	concept	
+arabic	وتضع	and (she) puts	concept	يضع
+arabic	بملامح	with features	concept	ملامح
+arabic	انسان	human	concept	اشخاص
+arabic	منهم	of them	none	
+arabic	شارب	moustache	concept	
+arabic	وحوله	and around him	concept	حول
+arabic	وينظر	and (he) looks	concept	ينظر
+arabic	نظرة	gaze	concept	
+arabic	وسماء	and sky	concept	سماء
+arabic	جنود	soldiers	concept	
+arabic	الام	mother	concept	
+arabic	وتحمل	and (she) carries	concept	تحمل
+arabic	ورائع	and wonderful	feeling	رائع
+arabic	لديه	he has	none	
+arabic	علامات	signs	none	
+arabic	معا	together	none	
+arabic	سرير	bed	concept	
+arabic	خشب	wood	concept	خشبيه
+arabic	اليه	to him	none	
+arabic	ظلام	darkness	concept	قاتمة
+arabic	حزين	sad	feeling	حزن
+arabic	تحتوي	contains	none	
+arabic	بطريقة	in a way	none	
+arabic	وهم	and they	none	
+arabic	وبجانبها	and beside her	concept	بجانب
+arabic	وشعرها	and her hair	concept	شعر
+arabic	اله	god; tool	none	
+arabic	ملون	coloured	concept	ملونة
+arabic	بشرة	skin	concept	
+arabic	جذابة	attractive	feeling	
+arabic	تطل	overlooks	concept	
+arabic	ليل	night	concept	
+arabic	حرب	war	concept	
+arabic	خلفه	behind him	concept	خلف
+arabic	بنيه	brown	concept	بني
+arabic	سحاب	clouds	concept	غيوم
+arabic	عيون	eyes	concept	
+arabic	عصا	stick	concept	
+arabic	هؤلاء	these	none	
+arabic	بألوان	in colours	concept	لون
+arabic	نفس	same; soul	none	
+arabic	بملابس	in clothes	concept	ملابس
+arabic	موجودة	present	none	
+arabic	يديه	his hands	concept	يده
+arabic	الذى	which	none	
+arabic	بعد	after	none	
+arabic	ممتع	enjoyable	feeling	متعة
+arabic	ثلوج	snow	concept	
+arabic	جيد	good	feeling	
+arabic	اجواء	atmosphere	feeling	
+arabic	وشعر	and hair	concept	شعر
+arabic	رسومات	drawings	none	
+arabic	وحولها	and around her	concept	حول
+arabic	طائر	bird	concept	طيور
+arabic	كانه	as if	none	
+arabic	وامامه	and in front of him	concept	امام
+arabic	احدى	one of	none	
+arabic	تماما	completely	none	
+arabic	عائلة	family	concept	
+arabic	وبه	and in it	none	
+arabic	مزهرية	vase	concept	زهرية
+arabic	عربة	cart	concept	
+arabic	نافذة	window	concept	
+arabic	صخره	rock	concept	صخور
+arabic	اشمئزاز	disgust	feeling	
+arabic	احصنه	horses	concept	حصان
+arabic	جميع	all	none	
+arabic	وتجلس	and (she) sits	concept	تجلس
+arabic	ثلاثة	three	none	
+arabic	ارى	I see	none	
+arabic	طبق	plate	concept	
+arabic	ملامحها	her features	concept	ملامح
+arabic	حيوان	animal	concept	حيوانات
+arabic	امر	matter	none	
+arabic	ذهبي	golden	concept	
+arabic	وسيم	handsome	feeling	
+arabic	اناء	vessel, vase	concept	زهرية
+arabic	وبجانبه	and beside him	concept	بجانب
+arabic	رمال	sand	concept	
+arabic	وعلي	and on	none	
+arabic	مقعد	seat	concept	كرسي
+arabic	حسناء	beautiful woman	concept	
+arabic	ورقة	paper, leaf	concept	اوراق
+arabic	صليب	cross	concept	
+arabic	ويقف	and (he) stands	concept	يقف
+arabic	رمادي	grey	concept	
+arabic	هندسية	geometric	concept	
+arabic	موضوعة	placed	none	
+arabic	معني	meaning	none	
+arabic	ثلج	snow	concept	ثلوج
+arabic	كثيف	dense	concept	كثيفة
+arabic	جذاب	attractive	feeling	جذابة
+arabic	جسر	bridge	concept	
+arabic	موضوع	subject	concept	
+arabic	بينهم	between them	none	
+arabic	تلبس	(she) wears	concept	ترتدي
+arabic	اجنحه	wings	concept	
+arabic	يعبر	expresses	none	
+arabic	وامامها	and in front of her	concept	امام
+arabic	بسبب	because of	none	
+arabic	ناعم	soft	concept	
+arabic	شديدة	intense	none	شديد
+arabic	طبيعية	natural	concept	طبيعي
+arabic	شابة	young woman	concept	فتاة
+arabic	نظر	looked	concept	ينظر
+arabic	ملامحه	his features	concept	ملامح
+arabic	مرتفعه	high	concept	عالية
+arabic	بشر	humans	concept	اشخاص
+arabic	يركب	rides	concept	
+arabic	فواكه	fruits	concept	فاكهة
+arabic	احساس	feeling	feeling	
+arabic	قماش	fabric	concept	
+arabic	دماء	blood	concept	
+arabic	ويحمل	and (he) carries	concept	تحمل
+arabic	شوارع	streets	concept	شارع
+arabic	تجمع	gathering	concept	
+arabic	لديها	she has	none	
+arabic	مدي	extent	none	
+arabic	وردي	pink	concept	
+arabic	وخلفها	and behind her	concept	خلف
+arabic	صور	pictures	none	صوره
+arabic	أريكة	sofa	concept	
+arabic	هواء	air	concept	
+arabic	لامرأة	of a woman	concept	امرأة
+arabic	تعب	tiredness	feeling	
+arabic	ثمار	fruits	concept	فاكهة
+arabic	للعين	to the eye	none	
+arabic	شراعية	sailing (boat)	concept	
+arabic	وغير	and other	none	
+arabic	فارس	knight	concept	
+arabic	ويضع	and (he) puts	concept	يضع
+arabic	تفكير	thinking	concept	
+arabic	نائمه	sleeping	concept	
+arabic	رضيع	infant	concept	
+arabic	واحد	one	none	
+arabic	الحب	love	feeling	
+arabic	غاية	utmost	none	
+arabic	وتظهر	and appears	none	
+arabic	سيف	sword	concept	
+arabic	جليد	ice	concept	
+arabic	تاج	crown	concept	
+arabic	ورده	rose	concept	زهور
+arabic	قاتم	dark	concept	قاتمة
+arabic	مساحات	spaces	concept	
+arabic	بكل	with all	none	
+arabic	تنام	sleeps	concept	نائمه
+arabic	احدهم	one of them	none	
+arabic	خلاب	breathtaking	feeling	خلابة
+arabic	يستمتعون	(they) enjoy	feeling	
+arabic	ليس	is not	none	
+arabic	وله	and he has	none	
+arabic	صافي	clear	concept	صافيه
+arabic	حيرة	confusion	feeling	
+arabic	باب	door	concept	
+arabic	فاتح	light (colour)	concept	
+arabic	بلون	in the colour	concept	لون
+arabic	حولهم	around them	concept	حول
+arabic	موسيقى	music	concept	موسيقية
+arabic	امامهم	in front of them	concept	امام
+arabic	قمر	moon	concept	
+arabic	نظرات	glances	concept	نظرة
+arabic	ويجلس	and (he) sits	concept	تجلس
+arabic	سعيدة	happy	feeling	سعادة
+arabic	وانه	and it is	none	
+arabic	لبعض	to each other	none	
+arabic	واسود	and black	concept	اسود
+arabic	ملئ	full	none	مليئة
+arabic	واحمر	and red	concept	احمر
+arabic	باهتة	pale	concept	
+arabic	عشوائي	random	none	
+arabic	تمتلئ	is filled	none	
+arabic	ظهور	appearance	none	
+arabic	زراعية	agricultural	concept	زرع
+arabic	لمجموعة	of a group	concept	مجموعة
+arabic	وخلفه	and behind him	concept	خلف
+arabic	بعيد	far	concept	
+arabic	أجمل	most beautiful	feeling	جميلة
+chinese	感到	feel	feeling	
+chinese	满足	content	feeling	
+chinese	女人	woman	concept	
+chinese	穿着	wearing	concept	
+chinese	男人	man	concept	
+chinese	女子	woman	concept	女人
+chinese	男子	man	concept	男人
+chinese	黑色	black	concept	
+chinese	白色	white	concept	
+chinese	衣服	clothes	concept	
+chinese	红色	red	concept	
+chinese	伤感	sad	feeling	
+chinese	坐在	sitting on	concept	
+chinese	天空	sky	concept	
+chinese	害怕	afraid	feeling	
+chinese	美好	lovely	feeling	
+chinese	蓝色	blue	concept	
+chinese	人们	people	concept	
+chinese	黄色	yellow	concept	
+chinese	惊叹	marvel	feeling	
+chinese	绿色	green	concept	
+chinese	树木	trees	concept	
+chinese	美丽	beautiful	feeling	
+chinese	表情	facial expression	concept	
+chinese	两个	two	none	
+chinese	不由	cannot help (but)	none	
+chinese	恐惧	fear	feeling	害怕
+chinese	温馨	cosy, warm-hearted	feeling	
+chinese	背景	background	concept	
+chinese	眼神	gaze	concept	
+chinese	地上	on the ground	concept	
+chinese	开心	happy	feeling	
+chinese	颜色	colour	concept	
+chinese	满意	satisfied	feeling	满足
+chinese	房屋	houses	concept	
+chinese	戴着	wearing (hat etc.)	concept	
+chinese	裙子	skirt, dress	concept	
+chinese	草地	grass, lawn	concept	
+chinese	还有	also, there is	none	
+chinese	孩子	child	concept	
+chinese	像是	looks like	none	
+chinese	头发	hair	concept	
+chinese	帽子	hat	concept	
+chinese	好笑	funny	feeling	
+chinese	眼睛	eyes	concept	
+chinese	舒服	comfortable	feeling	
+chinese	惬意	pleasant, at ease	feeling	
+chinese	图中	in the picture	none	
+chinese	女孩	girl	concept	
+chinese	桌子	table	concept	
+chinese	老人	old person	concept	
+chinese	线条	lines	concept	
+chinese	样子	appearance	none	
+chinese	舒适	comfortable	feeling	舒服
+chinese	远处	in the distance	concept	
+chinese	身穿	dressed in	concept	穿着
+chinese	椅子	chair	concept	
+chinese	一群	a group	concept	
+chinese	房子	house	concept	房屋
+chinese	花朵	flowers	concept	
+chinese	许多	many	none	
+chinese	平静	calm	feeling	
+chinese	人物	figure, person	concept	
+chinese	兴奋	excited	feeling	
+chinese	不禁	cannot help (but)	none	
+chinese	周围	around	concept	
+chinese	色彩	colours	concept	颜色
+chinese	愉悦	joyful	feeling	
+chinese	和谐	harmonious	feeling	
+chinese	手里	in the hand	concept	
+chinese	漂亮	pretty	feeling	美丽
+chinese	几个	several	none	
+chinese	身体	body	concept	
+chinese	生活	life	concept	
+chinese	悲伤	sad	feeling	伤感
+chinese	可爱	cute	feeling	
+chinese	前方	ahead	concept	
+chinese	脸上	on the face	concept	
+chinese	赤裸	naked	concept	
+chinese	充满	full of	none	
+chinese	悠闲	leisurely	feeling	惬意
+chinese	厌恶	disgust	feeling	
+chinese	树林	woods	concept	
+chinese	简单	simple	concept	
+chinese	嫌恶	loathing	feeling	厌恶
+chinese	吓人	frightening	feeling	
+chinese	高大	tall	concept	
+chinese	玩耍	playing	concept	
+chinese	感到恐惧	feel afraid	feeling	害怕
+chinese	小孩	child	concept	孩子
+chinese	平淡	bland	feeling	
+chinese	花瓶	vase	concept	
+chinese	很漂亮	very pretty	feeling	美丽
+chinese	忧郁	melancholy	feeling	
+chinese	鲜花	fresh flowers	concept	花朵
+chinese	恐怖	terrifying	feeling	吓人
+chinese	清澈	clear (water)	concept	
+chinese	东西	things	none	
+chinese	心情	mood	feeling	
+chinese	长裙	long dress	concept	裙子
+chinese	华丽	gorgeous	feeling	
+chinese	阳光	sunlight	concept	
+chinese	温暖	warm	feeling	
+chinese	一条	one (long thing)	none	
+chinese	热闹	bustling	concept	
+chinese	伤心	sad	feeling	伤感
+chinese	粉色	pink	concept	
+chinese	安静	quiet	feeling	
+chinese	令人满意	satisfying	feeling	满足
+chinese	幸福	happy, blessed	feeling	
+chinese	看上去	looks	none	
+chinese	令人惊叹	amazing	feeling	惊叹
+chinese	有着	having	none	
+chinese	诡异	eerie	feeling	
+chinese	搞笑	funny	feeling	好笑
+chinese	双手	both hands	concept	
+chinese	优雅	elegant	feeling	
+chinese	路上	on the road	concept	
+chinese	愤怒	anger	feeling	
+chinese	岸边	shore	concept	
+chinese	湖水	lake water	concept	
+chinese	孤独	lonely	feeling	
+chinese	灰色	grey	concept	
+chinese	整齐	neat	concept	
+chinese	神情	expression, look	concept	表情
+chinese	长着	growing, having	none	
+chinese	远方	far away	concept	
+chinese	街道	street	concept	
+chinese	少女	young girl	concept	女孩
+chinese	海面	sea surface	concept	
+chinese	惊讶	surprised	feeling	
+chinese	湖面	lake surface	concept	湖水
+chinese	大树	big tree	concept	树木
+chinese	建筑	building	concept	
+chinese	小女孩	little girl	concept	女孩
+chinese	三个	three	none	
+chinese	难过	sad	feeling	伤感
+chinese	色调	tone (colour)	concept	
+chinese	水果	fruit	concept	
+chinese	床上	on the bed	concept	
+chinese	图案	pattern	concept	
+chinese	安逸	at ease	feeling	惬意
+chinese	母亲	mother	concept	
+chinese	压抑	oppressive	feeling	
+chinese	女士	lady	concept	女人
+chinese	可怜	pitiful	feeling	
+chinese	凌乱	messy	concept	
+chinese	搭配	combination	concept	
+chinese	茂密	dense (foliage)	concept	
+chinese	水面	water surface	concept	
+chinese	身上	on the body	concept	
+chinese	严肃	serious	feeling	
+chinese	小船	small boat	concept	
+chinese	山峰	peak	concept	
+chinese	精致	exquisite	feeling	
+chinese	头上	on the head	concept	
+chinese	宁静	serene	feeling	平静
+chinese	杂乱	cluttered	concept	
+chinese	城堡	castle	concept	
+chinese	黑暗	darkness	concept	
+chinese	绿油油	lush green	concept	
+chinese	场景	scene	concept	
+chinese	胡子	beard	concept	
+chinese	紫色	purple	concept	
+chinese	感受	feeling	feeling	
+chinese	船只	boats	concept	小船
+chinese	可怕	frightening	feeling	吓人
+chinese	优美	graceful	feeling	
+chinese	只有	only	none	
+chinese	欣赏	appreciate	feeling	
+chinese	石头	stone	concept	
+chinese	海边	seaside	concept	岸边
+chinese	一脸	all over the face	none	
+chinese	喜欢	like	feeling	
+chinese	赤身裸体	stark naked	concept	赤裸
+chinese	棕色	brown	concept	
+chinese	森林	forest	concept	树林
+chinese	面容	face	concept	
+chinese	阴暗	dim, dark	concept	黑暗
+chinese	河水	river water	concept	
+chinese	凄凉	desolate	feeling	
+chinese	恶心	disgusting	feeling	
+chinese	皮肤	skin	concept	
+chinese	沙发	sofa	concept	
+chinese	西装	suit	concept	
+chinese	头巾	headscarf	concept	
+chinese	心旷神怡	refreshed and joyful	feeling	
+chinese	中有	among, there is	none	
+chinese	目光	gaze	concept	眼神
+chinese	昏暗	dim	concept	黑暗
+chinese	滑稽	comical	feeling	好笑
+chinese	露出	revealing	none	
+chinese	聊天	chatting	concept	
+chinese	茂盛	luxuriant	concept	茂密
+chinese	满足感	sense of contentment	feeling	满足
+chinese	太阳	sun	concept	
+chinese	忧伤	sorrowful	feeling	忧郁
+chinese	鲜艳	bright-coloured	concept	
+chinese	手中	in the hand	concept	手里
+chinese	快乐	happy	feeling	开心
+chinese	微笑	smile	concept	
+chinese	树叶	leaves	concept	
+chinese	温柔	gentle	feeling	
+chinese	海水	sea water	concept	海面
+chinese	蔚蓝	azure	concept	
+chinese	认真	earnest	feeling	
+chinese	大海	sea	concept	海面
+chinese	各种	various	none	
+chinese	下面	below	concept	
+chinese	边上	beside	concept	
+chinese	房间	room	concept	
+chinese	生长	growing	none	
+chinese	风景	scenery	concept	
+chinese	蓝天白云	blue sky, white clouds	concept	
+chinese	放在	placed on	none	
+chinese	翅膀	wings	concept	
+chinese	氛围	atmosphere	feeling	
+chinese	婴儿	baby	concept	
+chinese	河边	riverside	concept	
+chinese	巨大	huge	concept	
+chinese	长发	long hair	concept	
+chinese	景色	view	concept	风景
+chinese	金色	golden	concept	
+chinese	整体	overall	none	
+chinese	不同	different	none	
+chinese	动物	animals	concept	
+chinese	地面	ground	concept	地上
+chinese	眼前一亮	eye-catching	feeling	
+chinese	向往	yearn for	feeling	
+chinese	后面	behind	concept	
+chinese	微微	slightly	none	
+chinese	唯美	aesthetically beautiful	feeling	
+chinese	白云	white clouds	concept	
+chinese	河流	river	concept	河水
+chinese	笑容	smile	concept	微笑
+chinese	短发	short hair	concept	
+chinese	面带微笑	smiling	concept	微笑
+chinese	男士	gentleman	concept	男人
+chinese	帆船	sailboat	concept	
+chinese	组成	composed of	none	
+chinese	景象	sight, scene	concept	风景
+chinese	奇怪	strange	feeling	
+chinese	那里	there	none	
+chinese	之感	a sense of	feeling	
+chinese	身子	body	concept	身体
+chinese	明亮	bright	concept	
+chinese	动作	movement, pose	concept	
+chinese	讨厌	dislike	feeling	
+chinese	留着	wearing (hair, beard)	concept	
+chinese	一对	a pair	none	
+chinese	人心	people's hearts	feeling	
+chinese	格外	especially	none	
+chinese	勾勒	outline	concept	
+chinese	安稳	settled, secure	feeling	
+chinese	男孩	boy	concept	
+chinese	头戴	wearing on the head	concept	戴着
+chinese	摆放	arranged	none	
+chinese	形成	form	none	
+chinese	十字架	cross	concept	
+chinese	高高的	tall	concept	高大
+chinese	面色	complexion	concept	
+chinese	好看	good-looking	feeling	美丽
+chinese	士兵	soldier	concept	
+chinese	长长的	long	concept	
+chinese	植物	plants	concept	
+chinese	趴在	lying on	concept	
+chinese	场面	scene	concept	场景
+chinese	前面	in front	concept	
+chinese	壮观	spectacular	feeling	
+chinese	环境	surroundings	concept	
+chinese	形状	shape	concept	
+chinese	意境	artistic mood	feeling	
+chinese	行走	walking	concept	
+chinese	觉得很有	find it quite	none	
+chinese	树枝	branches	concept	
+chinese	小路	path	concept	路上
+chinese	黑白	black and white	concept	
+chinese	道路	road	concept	路上
+chinese	彩色	coloured	concept	
+chinese	村庄	village	concept	
+chinese	天使	angel	concept	
+chinese	加上	plus	none	
+chinese	人群	crowd	concept	人们
+chinese	卷发	curly hair	concept	
+chinese	一头	a head (of hair)	none	
+chinese	帅气	handsome	feeling	
+chinese	小男孩	little boy	concept	男孩
+chinese	满脸	all over the face	none	
+chinese	山坡	hillside	concept	
+chinese	一块	a piece	none	
+chinese	大大的	big	concept	巨大
+chinese	裸体	nude	concept	赤裸
+chinese	出来	out	none	
+chinese	干净	clean	concept	
+chinese	橙色	orange	concept	
+chinese	土地	land	concept	
+chinese	身材	figure, build	concept	
+chinese	五颜六色	multicoloured	concept	彩色
+chinese	荒凉	desolate	feeling	凄凉
+chinese	一丝	a trace of	none	
+chinese	一名	one (person)	none	
+chinese	一身	whole body (dressed in)	none	
+chinese	聚集	gathering	concept	
+chinese	慈祥	kindly	feeling	
+chinese	一艘	one (boat)	none	
+chinese	准备	preparing	none	
+chinese	上放	placed on	none	
+chinese	墙上	on the wall	concept	
+chinese	摆放着	placed	none	
+chinese	心疼	feel for, pity	feeling	
+chinese	骑着马	riding a horse	concept	
+chinese	裸露	bare, exposed	concept	赤裸
+chinese	围着	surrounding	none	
+chinese	行驶	sailing, driving	concept	
+chinese	城市	city	concept	
+chinese	跳舞	dancing	concept	
+chinese	一副	a (pair, look)	none	
+chinese	祥和	peaceful	feeling	
+chinese	沙滩	beach	concept	
+chinese	怪物	monster	concept	
+chinese	劳作	labouring	concept	
+chinese	交谈	talking	concept	聊天
+chinese	叶子	leaves	concept	树叶
+chinese	随意	casual	feeling	
+chinese	静谧	tranquil	feeling	
+chinese	白皙	fair-skinned	concept	
+chinese	海上	at sea	concept	海面
+chinese	五官	facial features	concept	
+chinese	有人	someone	none	
+chinese	相互	mutually	none	
+chinese	蓝天	blue sky	concept	蓝天白云
+chinese	蓝蓝的	very blue	concept	蔚蓝
+chinese	有种	there is a kind of	none	
+chinese	部分	part	none	
+chinese	扭曲	distorted	concept	
+chinese	马车	carriage	concept	
+chinese	盛开	in full bloom	concept	
+chinese	嘴角	corner of the mouth	concept	
+chinese	一把	a (handful)	none	
+chinese	洁白	pure white	concept	白色
+chinese	艺术	art	none	
+chinese	嫌弃	dislike	feeling	厌恶
+chinese	身后	behind	concept	
+chinese	相结合	combined	none	
+chinese	身着	dressed in	concept	穿着
+chinese	对比	contrast	concept	
+chinese	妇人	woman	concept	女人
+chinese	上衣	top (garment)	concept	
+chinese	呆滞	vacant (look)	feeling	
+chinese	相映成趣	delightful contrast	feeling	
+chinese	生气	angry	feeling	愤怒
+chinese	行人	pedestrians	concept	
+chinese	小狗	puppy	concept	
+chinese	自然	nature	concept	
+chinese	郁郁葱葱	lush	concept	茂密
+chinese	小镇	small town	concept	
+chinese	脖子	neck	concept	
+chinese	怀里	in the arms	concept	
+chinese	落寞	lonely	feeling	
+chinese	阴影	shadow	concept	
+chinese	描绘	depict	none	
+chinese	气氛	atmosphere	feeling	
+chinese	妈妈	mum	concept	母亲
+chinese	惊奇	amazed	feeling	惊讶
+chinese	放着	placed	none	
+chinese	怪异	weird	feeling	诡异
+chinese	桌上	on the table	concept	桌子
+chinese	天上	in the sky	concept	
+chinese	享受	enjoy	feeling	
+chinese	衣着	attire	concept	衣服
+chinese	两只	two (animals)	none	
+chinese	夕阳	setting sun	concept	
+chinese	碧蓝	azure	concept	蔚蓝
+chinese	海浪	waves	concept	
+chinese	草坪	lawn	concept	草地
+chinese	近处	nearby	concept	
+chinese	休息	resting	concept	
+chinese	树上	in the tree	concept	
+chinese	赏心悦目	pleasing to the eye	feeling	
+chinese	妇女	women	concept	女人
+chinese	面前	in front of	concept	
+chinese	凳子	stool	concept	
+chinese	好奇	curious	feeling	
+chinese	破旧	shabby	concept	
+chinese	模样	appearance	none	
+chinese	大自然	nature	concept	自然
+chinese	田野	fields	concept	
+chinese	不喜	dislike	feeling	
+chinese	美感	sense of beauty	feeling	
+chinese	生机勃勃	full of life	feeling	
+chinese	抽象	abstract	concept	
+chinese	两人	two people	none	
+chinese	窗户	window	concept	
+chinese	外面	outside	concept	
+chinese	树下	under the tree	concept	
+chinese	放松	relaxed	feeling	
+chinese	构成	make up	none	
+chinese	一望无际	boundless	concept	
+chinese	长满	overgrown with	none	
+chinese	晴朗	sunny	concept	
+chinese	灰暗	grey, gloomy	concept	黑暗
+chinese	有趣	interesting	feeling	
+chinese	如此	so	none	
+chinese	痛苦	pain	feeling	
+chinese	端庄	dignified	feeling	
+chinese	高贵	noble	feeling	
+chinese	不适	discomfort	feeling	
+chinese	长袍	robe	concept	
+chinese	碧绿	jade green	concept	绿油油
+chinese	想要	want	none	
+chinese	姿势	posture	concept	
+chinese	精美	exquisite	feeling	
+chinese	事情	matter	none	
+chinese	低着头	head lowered	concept	
+chinese	宫殿	palace	concept	
+chinese	众人	everyone, crowd	concept	人们
+chinese	倒映	reflection	concept	
+chinese	脸庞	face	concept	面容
+chinese	密密麻麻	densely packed	concept	
+chinese	出现	appear	none	
+chinese	手上	on the hand	concept	手里
+chinese	忙碌	busy	concept	
+chinese	看书	reading	concept	
+chinese	两位	two (people)	none	
+chinese	马上	at once; on horseback	none	
+chinese	盘子	plate	concept	
+chinese	即将	about to	none	
+chinese	男女	men and women	concept	
+chinese	嬉戏	frolicking	concept	
+chinese	感叹	sigh with feeling	feeling	惊叹
+chinese	一家人	family	concept	
+chinese	大地	earth, land	concept	土地
+chinese	小孩子	small child	concept	孩子
+chinese	独自	alone	concept	
+chinese	建造	built	none	
+chinese	身边	beside	concept	
+chinese	散步	strolling	concept	行走
+chinese	金黄色	golden	concept	金色
+chinese	毫无	not at all	none	
+chinese	几只	several (animals)	none	
+chinese	双眼	both eyes	concept	眼睛
+chinese	愉快	cheerful	feeling	开心
+chinese	湖边	lakeside	concept	
+chinese	一棵	one (tree)	none	
+chinese	两边	both sides	concept	
+chinese	空中	in the air	concept	天上
+chinese	更加	even more	none	
+chinese	骑着	riding	concept	骑着马
+chinese	镜子	mirror	concept	
+chinese	面部	face	concept	面容
+chinese	照耀	shining on	concept	
+chinese	上身	upper body	concept	
+chinese	外套	coat	concept	
+chinese	赞叹	admire	feeling	惊叹
+chinese	武器	weapon	concept	
+chinese	祈祷	praying	concept	
+chinese	地方	place	none	
+chinese	生机	vitality	feeling	生机勃勃
+chinese	红衣	red clothes	concept	
+chinese	极了	extremely	none	
+chinese	知道	know	none	
+chinese	低头	lowering the head	concept	低着头
+chinese	一匹	one (horse)	none	
+chinese	纸张	paper	concept	
+chinese	雪山	snowy mountain	concept	
+chinese	整洁	tidy	concept	整齐
+chinese	墙壁	wall	concept	墙上
+chinese	云朵	clouds	concept	白云
+chinese	艳丽	bright and colourful	concept	鲜艳
+chinese	排列	arranged	none	
+chinese	金黄	golden	concept	金色
+chinese	丰富	rich	concept	
+chinese	忧愁	worried	feeling	
+chinese	绿树	green trees	concept	树木
+chinese	美景	beautiful view	feeling	
+chinese	湛蓝	deep blue	concept	蔚蓝
+chinese	右边	right side	concept	
+chinese	流淌	flowing	concept	
+chinese	左边	left side	concept	
+chinese	一根	one (stick)	none	
+chinese	覆盖	covered	none	
+chinese	小屋	hut	concept	房屋
+chinese	姿态	posture	concept	姿势
+chinese	色块	colour blocks	concept	
+chinese	尽显	fully showing	none	
+chinese	全身	whole body	concept	
+chinese	衬托	set off	none	
+chinese	雕塑	sculpture	concept	
+chinese	连衣裙	dress	concept	裙子
+chinese	苹果	apple	concept	
+chinese	灯光	lamplight	concept	
+chinese	白衣	white clothes	concept	
+chinese	混乱	chaotic	concept	
+chinese	方块	squares	concept	
+chinese	宽阔	wide	concept	
+chinese	光秃秃	bare	concept	
+chinese	战争	war	concept	
+chinese	孤单	lonely	feeling	孤独
+chinese	船上	on the boat	concept	小船
+chinese	山脉	mountain range	concept	山峰
