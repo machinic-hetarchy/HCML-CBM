@@ -216,3 +216,16 @@ def sham_choice(mentioned: pd.DataFrame, rng) -> pd.DataFrame:
         k = min(row.sum(), len(free))
         out[i, rng.choice(free, k, replace=False)] = True
     return pd.DataFrame(out, index=mentioned.index, columns=mentioned.columns)
+
+
+def concept_pushes(df, fits, features, painting: str, language: str) -> pd.DataFrame:
+    """How much each concept pushes one painting's prediction toward each emotion, in the
+    fold model that never saw the painting: (coefficient - its mean over emotions) x the
+    painting's standardised concept score. Returns emotions x concepts."""
+    for te, lang, model in fits:
+        if lang == language and (df["painting"].iloc[te] == painting).any():
+            x = model[0].transform(features.loc[[painting]].to_numpy())[0]
+            coef = model[-1].coef_
+            push = (coef - coef.mean(axis=0)) * x
+            return pd.DataFrame(push, index=model[-1].classes_, columns=features.columns)
+    raise KeyError(f"no fold model for {painting} ({language})")

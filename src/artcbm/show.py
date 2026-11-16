@@ -131,20 +131,45 @@ def show(*blocks: str) -> None:
     display(HTML(row(*blocks)))
 
 
-def prediction_table(df, probs, painting: str, languages, top: int = 3) -> str:
-    """For one painting: what each language's annotators chose, next to the model's
-    most likely emotions for that language."""
-    head = f"<tr><th style='{CELL}'></th><th style='{CELL}'>chosen</th>"
-    head += f"<th style='{CELL}'>predicted</th></tr>"
+def bottleneck_steps(
+    df, probs, pushes: dict, scores_row: pd.Series, painting: str, languages, image_html: str
+) -> str:
+    """One painting through the bottleneck: the image, its strongest concepts, and per
+    language the predicted emotions, the concepts that push hardest toward the top one,
+    and what the annotators chose. `pushes` maps language -> emotions x concepts.
+    A concept marked (low) pushes because the painting scores below average on it."""
+    concepts = ", ".join(
+        f"{c} <span style='opacity:0.6'>{v:+.1f}</span>" for c, v in scores_row.nlargest(6).items()
+    )
+    step1 = (
+        f"<div style='{TEXT};margin:0 0 8px 12px'><b>1. Concepts CLIP sees:</b> {concepts}</div>"
+    )
+    head = (
+        f"<tr><th style='{CELL}'></th><th style='{CELL}'>2. predicted</th>"
+        f"<th style='{CELL}'>pushed most by</th><th style='{CELL}'>chosen by people</th></tr>"
+    )
     body = ""
     for lang in languages:
-        rows = (df["painting"] == painting) & (df["language"] == lang)
+        rows = ((df["painting"] == painting) & (df["language"] == lang)).to_numpy()
+        pred = probs[rows].iloc[0].nlargest(2)
+        top = pred.index[0]
+        drivers = pushes[lang].loc[top].nlargest(3)
         chosen = df.loc[rows, "emotion"].value_counts()
-        chosen = ", ".join(f"{e} ×{n}" for e, n in chosen.items())
-        pred = probs[rows.to_numpy()].iloc[0].nlargest(top)
-        pred = ", ".join(f"{e} {100 * v:.0f}%" for e, v in pred.items())
         body += (
-            f"<tr><td style='{CELL}'>{lang_label(lang)}</td><td style='{CELL}'>{chosen}</td>"
-            f"<td style='{CELL}'>{pred}</td></tr>"
+            f"<tr><td style='{CELL}'>{lang_label(lang)}</td>"
+            f"<td style='{CELL}'>"
+            + ", ".join(f"{e} {100 * v:.0f}%" for e, v in pred.items())
+            + f"</td><td style='{CELL}'>"
+            + ", ".join(c if scores_row[c] >= 0 else f"{c} (low)" for c in drivers.index)
+            + "</td>"
+            f"<td style='{CELL}'>"
+            + ", ".join(f"{e} ×{n}" for e, n in chosen.items())
+            + "</td></tr>"
         )
-    return f"<table style='{TABLE}'>{head}{body}</table>"
+    step2 = f"<table style='{TABLE}'>{head}{body}</table>"
+    steps = f"<div style='flex:1;min-width:0'>{step1}{step2}</div>"
+    return (
+        "<div style='display:flex;flex-wrap:wrap;align-items:flex-start;gap:8px;"
+        "border-top:1px solid rgba(128,128,128,0.3);padding:10px 0'>"
+        f"{figure(image_html, title(painting))}{steps}</div>"
+    )
