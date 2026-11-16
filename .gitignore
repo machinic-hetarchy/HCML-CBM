@@ -21,3 +21,6 @@ data/
 
 # Secrets
 .env*
+
+# Papers (copyrighted PDFs, kept locally)
+papers/
