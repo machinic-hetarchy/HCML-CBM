@@ -229,3 +229,32 @@ def concept_pushes(df, fits, features, painting: str, language: str) -> pd.DataF
             push = (coef - coef.mean(axis=0)) * x
             return pd.DataFrame(push, index=model[-1].classes_, columns=features.columns)
     raise KeyError(f"no fold model for {painting} ({language})")
+
+
+def score_label(df, features, raw, classes, n_folds, Cs, n_swap, seed, ceiling) -> dict:
+    """Score one painting-level task (the label in df["emotion"], one model for everyone):
+    plain accuracy, always guessing the most common label, the share of the room between
+    that guess and `ceiling` the bottleneck covers, the share of a label-mix guess's
+    squared error removed (bottleneck and black box on `raw`), and swapped concepts."""
+    classes = list(classes)
+    langs = ["all"]
+    probs, fits = forward_cv(df, features, classes, langs, n_folds, Cs, seed)
+    box, _ = forward_cv(df, raw, classes, langs, n_folds, Cs, seed)
+    prior = prior_cv(df, classes, n_folds, seed)
+    truth = df["emotion"].to_numpy()
+    acc = (probs.idxmax(axis=1).to_numpy() == truth).mean()
+    most_common = (prior.idxmax(axis=1).to_numpy() == truth).mean()
+    fixed_C = pd.Series([m[-1].C for _, _, m in fits]).mode()[0]
+    swaps = forward_swap_null(df, features, classes, langs, n_swap, n_folds, fixed_C, seed)
+    skill = explained(df, probs, prior, classes)["all emotions"]
+    return {
+        "labels": len(classes),
+        "always the most common label": most_common,
+        "bottleneck accuracy": acc,
+        "ceiling": ceiling,
+        "share of the room covered": (acc - most_common) / (ceiling - most_common),
+        "error removed: bottleneck": skill,
+        "error removed: black box": explained(df, box, prior, classes)["all emotions"],
+        "error removed: swapped concepts (max)": swaps.max(),
+        "beats all swaps": bool((swaps < skill).all()),
+    }

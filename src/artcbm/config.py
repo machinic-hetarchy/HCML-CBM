@@ -46,6 +46,7 @@ class AnalysisConfig:
     n_concept_components: int
     logreg_C: float
     forward_Cs: list[float]
+    min_paintings_per_style: int
 
 
 @dataclass(frozen=True)

@@ -38,3 +38,4 @@ analysis:
   n_concept_components: 10  # concept scores summarised into this many visual dimensions
   logreg_C: 0.01             # inverse L2 strength, fixed before looking at real results
   forward_Cs: [0.001, 0.01, 0.1, 1.0]  # forward CBM: C chosen from these inside each training fold
+  min_paintings_per_style: 20  # section 10: styles with fewer paintings are left out
