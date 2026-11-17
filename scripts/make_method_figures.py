@@ -161,11 +161,11 @@ def fig_bottleneck():
 
 # ---------------------------------------------------------------- 2. argument chain
 CHAIN = [
-    ("Labels", "Do the languages use the emotion options differently?", "sections 2, 3"),
-    ("Language as a category", "Does the chosen emotion give the language away?", "sections 4, 5"),
+    ("The painting's share", "How much does the painting decide, and does the model follow it?", "sections 2, 9"),
+    ("Labels", "Do the languages use the emotion options differently?", "sections 3, 4"),
+    ("Language as a category", "Does the chosen emotion give the language away?", "sections 5, 6"),
     ("Language-specific concepts", "Do another encoder or other vocabularies change the picture?", "sections 7, 8"),
     ("Checks", "Does each effect beat its shuffled version?", "all sections"),
-    ("The painting's share", "How much does the painting decide, and does the model follow it?", "sections 6, 9"),
 ]
 
 
@@ -192,7 +192,7 @@ def fig_chain(results=False):
     qmax = max(len(q) for _, q, _ in blocks)
     body_h = 30 + tmax * 19 + 10 + qmax * 17 + 26
     bh = body_h + (70 if results else 0)
-    H = 24 + bh + 96
+    H = 24 + bh + (60 if results else 24)
     b = []
     for i, (trows, qrows, secs) in enumerate(blocks):
         x = x0 + i * (bw + gap)
@@ -215,14 +215,11 @@ def fig_chain(results=False):
                 b += [text(x + 14, y + 6 + k * 17, "{" + f"r{i + 1}_{k + 1}" + "}", 12, ACC_TEXT, weight=500)]
         if i < 4:
             b += [arrow(x + bw + 3, 62, x + bw + gap - 3, 62)]
-    xa = x0 + 4 * (bw + gap) + bw / 2
-    xb = x0 + bw / 2
     yb = 24 + bh + 4
-    b += [path_arrow(f"M{xa} {yb} C {xa} {yb + 70}, {xb} {yb + 70}, {xb} {yb + 6}", dash="5 4")]
     if results:
-        b += [text(W / 2, yb + 64, "the language signal sits mostly in the labels", 12, TEXT2, "middle")]
+        b += [text(W / 2, yb + 26, "the language signal sits mostly in the labels", 12, TEXT2, "middle")]
     content = svg(W, H, b, "How the sections fit together",
-                  "Five questions in sequence, from label habits to the painting's share, with a loop back to labels.")
+                  "Five questions in sequence: the painting's share, label habits, language as a category, concepts, and checks.")
     if results:
         (OUT / "02_argument_chain_results.svg.tmpl").write_text(content, encoding="utf-8")
     else:
